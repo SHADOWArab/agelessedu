@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <header class="transparent">
+    <ul>
+       <li class="image"><img src="ageless_logo.png"></li> 
+       <div class="nav">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="#container6">   About </a></li>
+       <li><a href="login.html">login</a></li>
+       <li><a href="mylearning.html">My Learning</a></li>
+       <a href="help.html"><li>Help centre</li></a>
+       <li><a href="#footer">Contact us</a></li>
+       </div>
+    </ul>
+
+
+  </header>
+
+  <main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+
+
+} 
+body{
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}   
+    /*https://colorhunt.co/palette/706233b0926ae1c78ffae7c9*/
+header{
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    background-color: hsl(0, 2%, 24%);
+}  
+ header ul {
+    display: flex;
+; /* Adjust as needed */
+    align-items: center;
+    height: 5em;
+    width: 100%;
+    margin:0 0em;
+}
+
+header ul li {
+    color:white;
+    font-size: 1.2em; /* Adjust as needed */
+    list-style: none; /* Remove default list styles */
+}
+header a{
+   text-decoration: none;
+   color:white;
+}
+header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+header .image{
+    width: 7em;
+    height: 7em;
+    
+}
+header .nav li:hover{
+    text-decoration: none;
+    color: hsl(210, 1%, 67%);
+    transition: transform 0.5s ;
+    transform: scale(1.2);
+}
+
+            .container {    
+            height:50em;
+            
+        }
+        #container1{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            background-image: url('education.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 0 0 30px 30px;
+        }
+        #container2{
+            margin-top: 4em;
+            height: auto;
+        }
+        .slogan{
+          
+            width: 8em;
+            height: 5em;
+            display: flex;
+            font-size: 5em;
+            font-family: "Poppins",sans-serif;
+            text-align: center;
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+         
+            margin-top: auto;
+            margin-bottom: auto;
+            color:white;
+            border-radius: 0.3em;
+        }
+        .container2child{
+            height: auto;
+            font-size: 1.5em;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .container2child p{
+            width: 80%;
+            margin-top: 2em;
+            
+        }
+        .container2child img{
+            margin-top: 2em;
+            height: 18em;
+        }
+        span{
+            color: #fbd204;
+        }
+        #container3,#container4{
+            margin: 3em;
+            height: auto;
+           display: flex;
+           flex-wrap: wrap;
+           padding-left: 2em;
+           
+        }
+        .card1:hover,.card2:hover{
+            background-color:hsl(0, 2%, 24%) ;
+            color: #ccc;
+            
+        }
+        .card1 ,.card2{
+            margin-left: 6em;
+            width: 90%;
+            color: #181818;
+            background-color:hsl(0, 1%, 80%) ;
+            height: auto;
+            flex-wrap: wrap;
+            font-size: 2em;
+            margin: 1em;
+            border-radius: 2em;
+            padding: 1em;
+            justify-content: space-between;
+        }
+        #container5{
+            background-image: url(bg-image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 4em;
+            overflow: hidden;
+            border-radius: 3em;
+            border: solid 1px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+       
+        #container6{
+            margin-top: 2em;
+            height: auto;
+            font-size: 2em;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        #container6 p{
+            width: 80%;
+            margin-top: 2em;
+            border-radius: 0.5em;
+            background-color: #edeaea;
+        }
+        .text-overlay{
+            font-size: 2em;
+            color: black;
+            background-color: white;
+            border-radius: 0.5em;
+        }
+       footer{
+        display: flex;
+        margin-top: 10em;
+        background-color: hsl(0, 2%, 24%);
+        color: #ccc;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+       }
+       footer .social-icons{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20em;
+        height: 4em;
+     
+       } 
+       footer .social-icons img{
+        height: 4em;
+        width: 4em;
+        
+       }
+       footer .socialmediacon{
+       }
+        </style>
+        <title>Home page</title>
+    </head>
+    <body>
+        <div class="main">
+    
+        <div class="container" id="container1">
+            <div class="slogan">
+                The Future of Quality Education
+            </div>
+           
+        </div>
+    
+        <div class="container" id="container2">
+            <div class="container2child">
+               <p> At <span>Ageless Edu</span>,we believe that learning knows no age limits. Whether you're a seasoned professional looking to enhance your skills or a lifelong learner eager to explore new horizons, we have the perfect educational solutions for you.</p>
+                 <div class="image">
+                   <img src="container2png.png">
+                 </div>  
+            </div>
+        </div>
+    
+        <div class="container" id="container3">
+               <div class="card1">
+                <b>Early Childhood to Year 5:</b><br><br>
+              <p> At <span>Ageless edu</span> we ignite the spark of curiosity in our youngest learners. Our programs for early childhood to Year 5 focus on interactive and engaging content, laying the foundation for a lifetime of discovery.<br>
+               <b>Featured Courses:</b>
+           
+               Playful Beginnings: Early Childhood Exploration<br>
+               Elementary Wonders: Years 1-5 Adventures
+            
+               </div>
+               <div class="card2">
+               <b> School Age to Youth:</b><br><br>
+                As students transition into their school-age years,<span> Agless edu</span> provides dynamic courses that align with their evolving interests and educational needs. From STEM exploration to creative arts, our offerings cater to the diverse passions of this age group.<br>
+               <b> Featured Courses:</b>
+                Science Explorers: Years 6-9 Discovery
+                Creative Arts Studio: Unleashing Youthful Expression
+               </div>
+        </div>
+    
+        <div class="container" id="container4">
+            <div class="card1">
+               <b> Young Adults:</b><br><br>
+
+                Navigating the transition to adulthood comes with its unique challenges.<span>Agless Edu</span> offers courses that empower young adults to develop essential life skills, explore career paths, and build a strong foundation for their future.<br>
+                
+              <b> Featured Courses:</b>
+                
+                Career Launchpad: Building Futures
+                Personal Growth Blueprint: Young Adult Empowerment
+            </div>
+              <div class="card2">
+               <b> Lifelong Learning:</b><br><br>
+
+                Learning is a lifelong journey. Our diverse range of courses for lifelong learners spans various subjects and skill levels.<span>Agless Edu</span> is your partner in continuous growth.<br>
+                
+               <b> Featured Courses:</b>
+                
+                MasterClass Series: Expert Insights for Lifelong Learners
+                Professional Development Hub: Skills for Every Stage
+            </div>
+        </div>
+    
+        <div class="container" id="container5">
+            <div class="videocontainer">
+                <video autoplay muted loop>
+                    <source src="WhatsApp Video 2023-12-21 at 2.40.48 AM.mp4"  type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text-overlay">
+                    <p>Learning Knows No Age Limits!</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container" id="container6">
+          <p>
+            At<span> Agless Edu</span>, we're committed to redefining education by providing tailored learning experiences for individuals of all ages. Our passionate educators and industry experts are dedicated to creating a community where learning is a lifelong adventure.
+            </p>
+        </div>
+    </main>
+    <footer id="footer">
+       <div class="socialmediacon">
+        <div class="socialtext">Follow us on Social Media</div>
+        <div class="social-icons">
+        <a href="#" target="_blank"><img src="facebook.png">  </a>
+        <a href="#" target="_blank"><img src="twitter.png"></a>
+        <a href="#" target="_blank"><img src="instagram.png"></a>
+        <a href="#" target="_blank"><img src="linkedin.png"></a>
+       </div> 
+    </div>
+        <!-- Add more social media icons as needed -->
+    </div>
+    <p>&copy; 2023 <span>Ageless Edu</span>. All rights reserved.</p>
+
+    <div class="address">
+        <p>Ageless Edu Office</p>
+        <p>123 Main Street</p>
+        <p>Cityville, State 12345</p>
+        <p>Email: info@agelessedu.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+    </div>
+
+    
+
+</footer>
+    </div>
+    </body>
+    </html>
+     
+  
+
+
+</body>
+<script>
+
+window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            var scrolled = window.scrollY > 0;
+
+            // Toggle between transparent and scrolled styles based on scroll position
+            if (scrolled) {
+                header.classList.add('scrolled');
+                header.classList.remove('transparent');
+            } else {
+                header.classList.add('transparent');
+                header.classList.remove('scrolled');
+            }
+        });
+</script>
+</html>

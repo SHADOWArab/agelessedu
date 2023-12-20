@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="loader" id="loader">
+    Loading...
+</div>
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+.loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: hsla(283, 10%, 13%, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            display: none; /* Initially hide the loader */
+        }
+body{
+    background-image: url(bg-image.jpg);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    backdrop-filter: brightness(20%);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: "Poppins", sans-serif;
+}
+
+form{
+    background-color: #ffffff;
+    width: 23.75em;
+    height: 25em;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 3.1em;
+    border-radius: 0.5em;
+}
+form label {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  color: #2e0d30;
+}
+form input {
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #3f3554;
+  padding: 0.3em;
+  border: none;
+  border-bottom: 0.12em solid #3f3554;
+  outline: none;
+}
+form input:focus {
+  border-color: #FFD369;
+}
+form input:not(:last-child) {
+  margin-bottom: 0.9em;
+}
+form button {
+  font-size: 0.95em;
+  padding: 0.8em 0;
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  background-color: #f4c531;
+  color: #2e0d30;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  margin-top: 0.8em;
+  width: 100%;
+  
+}
+a:link{
+  text-decoration: none;
+}
+#login a{
+  text-decoration: none;
+}
+button a,button a:active{
+  text-decoration: none;
+ }  
+ button:hover,button a:hover{
+  text-decoration: none;
+  color: #f4c531;
+  background-color:#2e0d30 ;
+ }  
+
+</style>
+
+
+<div class="container">
+    <form>
+        <form id="form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required >
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" required >
+            <label for="phone">Phone No</label>
+            <input type="tel" id="phone" maxlength='10' pattern="[0-9]{10}" required >
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <div class="button">
+            <button id="signup">Sign up</button>
+            <button onclick="redirect()"   id="login">&#9666; Back to login</button></a>
+            </div>
+    </form>
+</div>
+
+
+</body>
+<script>
+  function redirect(){
+    {
+            // Display the loader when transitioning to another page
+            document.getElementById('loader').style.display = 'flex';
+
+            // Simulate a delay (you can replace this with an actual page load)
+            setTimeout(function() {
+                window.location.href = 'login.html';
+            }, 1000); // 1000 milliseconds (1 second) delay as an example
+        }
+
+        // Hide the loader when the page is fully loaded
+        window.onload = function() {
+            document.getElementById('loader').style.display = 'none';
+  }
+}
+</script>
+</html>
